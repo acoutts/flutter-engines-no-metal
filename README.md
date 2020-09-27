@@ -21,6 +21,7 @@ flutter precache
 If you ever want to go back to the normal one, simply delete the engine artifacts and re-download them:
 ```
 rm -rf $FLUTTER_HOME/bin/cache/artifacts/engine/*
+flutter channel [stable|beta|dev|master]
 flutter upgrade
 flutter doctor
 flutter precache
