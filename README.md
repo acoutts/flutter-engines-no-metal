@@ -27,6 +27,6 @@ flutter doctor
 flutter precache
 ```
 
-## Requesting new engines
+## Requesting new flutter versions
 
 Please submit an issue if you want additional flutter versions supported.
