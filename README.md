@@ -6,9 +6,9 @@ How to use SkSL caching: https://github.com/flutter/flutter/wiki/Reduce-shader-c
 
 ## How to use
 
-* Download the engine from this repository which matches your flutter version *exactly*. The version number of the folders here are the exact flutter tag you should checkout.
-* Ensure your flutter sdk is using the tag matching the name of the engine you downloaded. Example:
+* Download the engine artifacts from this repository which matches your flutter version *exactly*. The version number of the folders here are the exact flutter tag you should checkout. Example:
 ```
+cd $FLUTTER_HOME
 git checkout tags/1.20.4
 flutter upgrade
 flutter precache
