@@ -10,7 +10,7 @@ How to use SkSL caching: https://github.com/flutter/flutter/wiki/Reduce-shader-c
 ```
 cd $FLUTTER_HOME
 git checkout tags/1.20.4
-flutter upgrade
+flutter doctor
 flutter precache
 ```
 * Unzip the engine zips and move the `Flutter.framework` folder inside the zip into the respective folder at `$FLUTTER_HOME/bin/cache/artifacts/engine/[ios-profile/ios-release]` where `FLUTTER_HOME` represents where your flutter SDK lives on your disk. You should overwrite the existing `Flutter.framework` folder with the one contained in the zip file.
