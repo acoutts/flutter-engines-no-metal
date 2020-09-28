@@ -6,11 +6,11 @@ How to use SkSL caching: https://github.com/flutter/flutter/wiki/Reduce-shader-c
 
 ## How to use
 
-* Download the engine from this repository which matches your flutter version *exactly*. The version number of the folders here are the exact flutter tag you should checkout.
-* Ensure your flutter sdk is using the tag matching the name of the engine you downloaded. Example:
+* Download the engine artifacts from this repository which matches your flutter version *exactly*. The version number of the folders here are the exact flutter tag you should checkout. Example:
 ```
+cd $FLUTTER_HOME
 git checkout tags/1.20.4
-flutter upgrade
+flutter doctor
 flutter precache
 ```
 * Unzip the engine zips and move the `Flutter.framework` folder inside the zip into the respective folder at `$FLUTTER_HOME/bin/cache/artifacts/engine/[ios-profile/ios-release]` where `FLUTTER_HOME` represents where your flutter SDK lives on your disk. You should overwrite the existing `Flutter.framework` folder with the one contained in the zip file.
@@ -21,7 +21,12 @@ flutter precache
 If you ever want to go back to the normal one, simply delete the engine artifacts and re-download them:
 ```
 rm -rf $FLUTTER_HOME/bin/cache/artifacts/engine/*
+flutter channel [stable|beta|dev|master]
 flutter upgrade
 flutter doctor
 flutter precache
 ```
+
+## Requesting new flutter versions
+
+Please submit an issue if you want additional flutter versions supported.
