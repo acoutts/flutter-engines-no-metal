@@ -2,7 +2,7 @@
 
 These flutter engines have been compiled with metal disabled in iOS. This allows you to use SkSL cache files for iOS builds to reduce first-run jank.
 
-How to use SkSL caching: https://github.com/flutter/flutter/wiki/Reduce-shader-compilation-jank-using-SkSL-warm-up
+How to use SkSL caching: https://flutter.dev/docs/perf/rendering/shader
 
 ## How to use
 
