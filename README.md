@@ -11,7 +11,7 @@ How to use SkSL caching: https://flutter.dev/docs/perf/rendering/shader
 cd $FLUTTER_HOME
 git checkout tags/1.20.4
 flutter doctor
-flutter precache
+flutter precache # Make sure you do this or else you might accidentally overwrite your metal-disabled engine later
 ```
 * Unzip the engine zips and move the `Flutter.framework` folder inside the zip into the respective folder at `$FLUTTER_HOME/bin/cache/artifacts/engine/[ios-profile/ios-release]` where `FLUTTER_HOME` represents where your flutter SDK lives on your disk. You should overwrite the existing `Flutter.framework` folder with the one contained in the zip file.
 * Do a `flutter clean` and rebuild your project and it will now build iOS with metal disabled.
