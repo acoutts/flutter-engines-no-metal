@@ -1,3 +1,5 @@
+# As of https://github.com/flutter/flutter/issues/79298 metal now supports SkSL warmup. This repository will no longer be updated.
+
 # Flutter engines (metal disabled)
 
 These flutter engines have been compiled with metal disabled in iOS. This allows you to use SkSL cache files for iOS builds to reduce first-run jank.
